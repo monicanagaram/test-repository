@@ -1,0 +1,21 @@
+package javabrushup;
+
+public class EvenorOdd {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int a=10;
+		System.out.println(EvenorOdd.evenorOdd(10));
+		System.out.println(EvenorOdd.evenorOdd(11));
+		
+	}
+	public static String evenorOdd(int num) {
+		if(num%2==0){
+			return num + "Its Even";
+		}
+		else{
+			return num + "its odd";
+		}
+	}
+}

@@ -1,0 +1,39 @@
+package com.gurantors.GuarantorsApi;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import io.restassured.response.Response;
+
+public class AppTest 
+{
+	ReusableFunctions reusableFn = new ReusableFunctions();
+	String BaseURL="https://research.theguarantors.com/qa-test/";
+
+ @Test
+ public void Post201Test(){
+	 Response response;
+	 JSONObject requestJson = new JSONObject();  
+	 boolean flag = false;
+	 requestJson.put("numbers", new JSONArray(new Object[] { 1,2,3} ));
+	 System.out.println("Request Body is =>  " + requestJson.toString());
+	 response=reusableFn.PostRequest(BaseURL, requestJson.toString());
+		String responseBody = response.getBody().asString();
+		System.out.println("Response Body is =>  " + responseBody);
+		JSONArray JSONResponseBody = new   JSONArray(response.body().asString());
+		for(int i=0; i<JSONResponseBody.length(); i++){
+			System.out.println(JSONResponseBody.get(i));
+			 if(Double.parseDouble((String) JSONResponseBody.get(i))>Double.parseDouble((String) JSONResponseBody.get(i+1))){
+				 Assert.assertFalse(Double.parseDouble((String) JSONResponseBody.get(i))>Double.parseDouble((String) JSONResponseBody.get(i+1)));
+			    flag=false;
+			 }
+				flag=true;
+		    }
+	Assert.assertTrue(flag);
+		 
+		}
+	}
+    
+

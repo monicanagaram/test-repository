@@ -1,0 +1,43 @@
+package javabrushup;
+
+public class IfelseStatementinArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int [] list = {1,2222,122,13,14,45};
+		int [] list2 = {1,23,123,19,45};
+		int [] list3 = {334,22,1122,113,45};
+
+
+		IfelseStatementinArray.calculateMax(list);
+		IfelseStatementinArray.calculateMax(list2);
+		
+		IfelseStatementinArray.calculateMax(list3);
+		
+		
+	}
+	public static void calculateMax(int []list) {
+		if (list[0]>list[1] && list[0]>list[2] && list[0]>list[2] && list[0]>list[3]){
+			System.out.println(list[0]);
+
+		}
+		else if(list[1]>list[0] && list[1]>list[2] && list[1]>list[3] && list[1]>list[4])
+		{
+			System.out.println(list[1]);
+		}
+		else if (list[2]>list[0] && list[2]>list[1] && list[2]>list[3] && list[2]>list[4])
+		{
+			System.out.println(list[2]);
+		}
+		else if(list[3]>list[0] && list[3]>list[1] && list[3]>list[2] && list[3]>list[4])
+		{
+			System.out.println(list[3]);
+
+		}
+		else if(list[4]<list[0] && list[4]>list[1] && list[4]>list[2] && list[4]>list[3])
+		{
+			System.out.println(list[4]);
+		}
+	}
+
+}

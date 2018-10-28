@@ -1,0 +1,56 @@
+/**
+/**
+ * @author Monica Nagaram
+ * Possible Test Cases for New Order API
+ */
+package com.qa.tests;
+
+/**
+ * Imports 
+ */
+
+import java.util.Base64;
+import java.util.Objects;
+
+import javax.crypto.Mac;
+import javax.crypto.spec.SecretKeySpec;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.http.Method;
+import io.restassured.response.Response;
+import io.restassured.response.ResponseBody;
+import io.restassured.specification.RequestSpecification;
+
+public class APITest {
+
+	/**
+	 * Setup Parameters
+	 */
+
+
+	//These needs to be securely loaded
+	private static final String API_SECRET = "4D27fFyvmJf4cmigg9vQuun7Aktv";
+	private static final String API_KEY = "33GSPrDCVkjFgDItgsbC";
+	private static final String REST_API_BASE = "https://api.sandbox.gemini.com";
+
+	RequestSpecification spec;
+	Mac mac;
+
+	/**
+	 * Test Case 1:	
+	 * 		New Order Basic Test: Validate new order with buy/sell and 
+	 * 		type “maker-or-cancel” with a symbol and test all fields in the response
+	 */
+	@Test
+	public void TestNewOrder() {
+	}
+
+} 

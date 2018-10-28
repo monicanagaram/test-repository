@@ -1,0 +1,17 @@
+package javabrushup;
+
+public class MaxNuminArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int arr[]={20,35,40,13,2};
+	}
+		
+		public static int max()
+		{
+		
+		
+	}
+
+}

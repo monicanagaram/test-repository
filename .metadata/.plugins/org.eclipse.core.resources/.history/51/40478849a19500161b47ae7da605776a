@@ -1,0 +1,8 @@
+
+public class Hi {
+
+	public Hi() {
+	
+		System.out.println("hello world");	}
+
+}

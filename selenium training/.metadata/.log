@@ -1,0 +1,28 @@
+!SESSION 2016-08-01 13:10:13.247 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/monica/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/monica/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2016-08-01 13:10:30.574
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jdt.launching 4 150 2016-08-03 16:46:54.101
+!MESSAGE The archive: /Users/monica/Documents/JARs/selenium-server-standalone-3.0.0-beta1.jar which is referenced by the classpath, does not exist.
+
+!ENTRY org.eclipse.jdt.launching 4 150 2016-08-03 16:47:03.118
+!MESSAGE The archive: /Users/monica/Documents/JARs/selenium-server-standalone-3.0.0-beta1.jar which is referenced by the classpath, does not exist.
+
+!ENTRY org.eclipse.jdt.launching 4 150 2016-08-03 16:47:50.842
+!MESSAGE The archive: /Users/monica/Documents/JARs/selenium-server-standalone-3.0.0-beta1.jar which is referenced by the classpath, does not exist.
+
+!ENTRY org.eclipse.jdt.launching 4 150 2016-08-03 16:48:18.862
+!MESSAGE The archive: /Users/monica/Documents/JARs/selenium-server-standalone-3.0.0-beta1.jar which is referenced by the classpath, does not exist.
+
+!ENTRY org.eclipse.jdt.launching 4 150 2016-08-03 16:48:23.732
+!MESSAGE The archive: /Users/monica/Documents/JARs/selenium-server-standalone-3.0.0-beta1.jar which is referenced by the classpath, does not exist.
+
+!ENTRY org.eclipse.jdt.launching 4 150 2016-08-03 16:49:31.422
+!MESSAGE The archive: /Users/monica/Documents/JARs/selenium-server-standalone-3.0.0-beta1.jar which is referenced by the classpath, does not exist.

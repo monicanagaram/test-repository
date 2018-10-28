@@ -1,0 +1,33 @@
+package testgetsymbols.testgetsymbols;
+
+import org.testng.AssertJUnit;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	/*
+    	 * response = requests.get(base_url + "/symbols",
+                        headers=request_headers,
+                        timeout=timeout,
+                        verify=False)
+           assert response.status_code == 200
+           return response.content
+    	 */
+    	
+    	Response response = RestAssured.get("https://api.gemini.com/v1/symbols");
+    	System.out.println(response.getBody().asString());
+    	System.out.println("------------------------");
+    	
+    	
+    
+        
+    }
+}

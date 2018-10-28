@@ -1,0 +1,20 @@
+package com.gurantors.GuarantorsApi;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+public class AppTest 
+{
+	ReusableFunctions reusableFn = new ReusableFunctions();
+	String BaseURL="https://research.theguarantors.com/qa-test/";
+	
+ public void Post201Test(){
+	 
+	 JSONObject json = new JSONObject();         
+	 json.put("numbers", new JSONArray(new Object[] { 1,2,3} ));
+	 reusableFn.PostRequest(BaseURL, payload)
+	 
+		
+	}
+    
+}

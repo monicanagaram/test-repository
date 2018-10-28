@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Training/src/javaprograms/Palindrome.java&apos; to &apos;MiniCalculator.java&apos;" description="Rename resource &apos;Palindrome.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/javaprograms/Palindrome.java" name="MiniCalculator.java" stamp="1477093561260" updateReferences="true"/>
+</session>

@@ -1,0 +1,52 @@
+package com.gurantors.GuarantorsApi;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import io.restassured.response.Response;
+
+public class AppTest 
+{
+	ReusableFunctions reusableFn = new ReusableFunctions();
+	String BaseURL="https://research.theguarantors.com/qa-test/";
+
+ @Test
+ public void Post201Test(){
+	 Response response;
+	 JSONObject requestJson = new JSONObject();  
+	 boolean flag = false;
+	 requestJson.put("numbers", new JSONArray(new Object[] { 1,2,3} ));
+	 System.out.println("Request Body is =>  " + requestJson.toString());
+	 response=reusableFn.PostRequest(BaseURL, requestJson.toString());
+		String responseBody = response.getBody().asString();
+		System.out.println("Response Body is =>  " + responseBody);
+		JSONArray JSONResponseBody = new   JSONArray(response.body().asString());
+		for(int i=1; i<JSONResponseBody.length(); i++){
+			 if(((Integer)JSONResponseBody.get(i-1)) > ((Integer) JSONResponseBody.get(i))){				 
+			    flag=false;
+			    Assert.assertTrue(flag);
+			 }
+				flag=true;
+		    }
+	Assert.assertTrue(flag);
+		 
+		}
+ 
+ public void validateForAscendingOrder(JSONArray array){
+	 boolean flag=false;
+	 for(int i=1; i<array.length(); i++){
+		 if(((Integer)array.get(i-1)) > ((Integer) array.get(i))){				 
+		    flag=false;
+		    Assert.assertTrue(flag);
+		 }
+			flag=true;
+	    }
+        Assert.assertTrue(flag);
+	 
+ }
+ 
+	}
+    
+

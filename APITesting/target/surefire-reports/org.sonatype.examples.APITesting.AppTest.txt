@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.sonatype.examples.APITesting.AppTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.528 s - in org.sonatype.examples.APITesting.AppTest

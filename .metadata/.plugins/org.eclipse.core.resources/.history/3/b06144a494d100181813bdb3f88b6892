@@ -1,0 +1,44 @@
+package testgetsymbols.testgetsymbols;
+
+import java.util.ArrayList;
+
+import org.testng.AssertJUnit;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	/*
+    	 * response = requests.get(base_url + "/symbols",
+                        headers=request_headers,
+                        timeout=timeout,
+                        verify=False)
+           assert response.status_code == 200
+           return response.content
+    	 */
+    	
+    	Response response = RestAssured.get("https://api.gemini.com/v1/symbols");
+    	System.out.println(response.getBody().asString());
+    	System.out.println("------------------------");
+    	
+    	/*ArrayList<String> arrayList = new ArrayList<String>();
+    	arrayList.add(new String(""));
+        arrayList.add(new Integer("1"));
+        arrayList.add(new Integer("8"));
+        arrayList.add(new Integer("3"));
+        arrayList.add(new Integer("5"));
+
+        Object obj = Collections.max(arrayList);
+        System.out.println(obj);
+      }
+    }*/
+    
+    }
+}

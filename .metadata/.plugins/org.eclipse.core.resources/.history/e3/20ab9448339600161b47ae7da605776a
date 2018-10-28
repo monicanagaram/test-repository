@@ -1,0 +1,22 @@
+package javaprograms;
+
+public class SimpleIf {
+	public static void main(String[] args) {
+		
+		int a=15;
+		
+				if(a>=15)
+			
+				{
+					System.out.println("say its a true:"+a);
+				}
+				else if
+				{
+					System.out.println("say its a false:"+a);
+				}
+				else
+				{
+				System.out.println("say if it is equal:"+a);
+				}
+	}
+}

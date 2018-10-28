@@ -1,0 +1,30 @@
+package javaprograms;
+
+public class SwitchStatement {
+
+	public static void main(String[] args) {
+	
+		string(name) = "monica";
+		
+		switch(name)
+		{
+		case('bhdai'):
+			System.out.println("if the case is b");
+		break;
+		
+			case('monica'):
+				System.out.println("if the case is c");
+			break;
+		
+			default:
+				System.out.println("if both are wrong");
+				break;
+		}
+	
+			
+		}
+		
+
+	}
+
+}

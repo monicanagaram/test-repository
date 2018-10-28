@@ -1,0 +1,67 @@
+package testgetsymbols.testgetsymbols;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+import org.testng.AssertJUnit;
+
+import com.google.gson.Gson;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	/*
+    	 * response = requests.get(base_url + "/symbols",
+                        headers=request_headers,
+                        timeout=timeout,
+                        verify=False)
+           assert response.status_code == 200
+           return response.content
+    	 */
+    	
+    	Response response = RestAssured.get("https://api.gemini.com/v1/symbols");
+    	System.out.println(response.getBody().asString());
+    	System.out.println("------------------------");
+    	
+    	/*ArrayList<String> arrayList = new ArrayList<String>();
+    	arrayList.add(new String("btcusd"));
+        arrayList.add(new String("ethbtc"));
+        arrayList.add(new String("ethusd"));
+        arrayList.add(new String("ltcusd"));
+        arrayList.add(new String("ltcbtc"));
+        arrayList.add(new String("ltceth"));
+        arrayList.add(new String("zecusd"));
+        arrayList.add(new String("zecbtc"));
+        arrayList.add(new String("zeceth"));
+        arrayList.add(new String("zecltc"));
+
+        Object obj = Collections.max(arrayList);
+        System.out.println(obj);*/
+    	
+    	 String jsonArrayString = response.getBody().asString();
+    	 Gson googleJson = new Gson();
+    	 ArrayList javaArrayListFromGSON = googleJson.fromJson(jsonArrayString, ArrayList.class);
+    	 
+    	 System.out.println(javaArrayListFromGSON);
+    	 
+    	 float []prices = new float[javaArrayListFromGSON.size];
+
+    	 for(int i=0;i<javaArrayListFromGSON.size;i++) {
+    	  String api = "https://api.gemini.com/v1/auction/" + javaArrayListFromGSON.get(i);
+    	  prices.add(price);
+    	 }*/
+
+    	 
+      
+    }
+    
+    
+}

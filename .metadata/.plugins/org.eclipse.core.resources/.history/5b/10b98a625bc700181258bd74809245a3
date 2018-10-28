@@ -1,0 +1,10 @@
+package javabrushup;
+
+public class MaxNuminArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

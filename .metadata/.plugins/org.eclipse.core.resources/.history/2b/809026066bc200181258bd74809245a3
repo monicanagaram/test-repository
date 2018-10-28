@@ -1,0 +1,15 @@
+package com.gurantors.GuarantorsApi;
+
+
+public class AppTest 
+{
+	ReusableFunctions reusableFn = new ReusableFunctions();
+	String BaseURL="https://research.theguarantors.com/qa-test/";
+	
+ public void Post201Test(){
+	 
+	 
+		
+	}
+    
+}

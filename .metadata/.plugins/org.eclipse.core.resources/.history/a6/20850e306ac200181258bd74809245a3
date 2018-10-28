@@ -1,0 +1,27 @@
+package com.gurantors.GuarantorsApi;
+
+import org.json.JSONObject;
+
+import io.restassured.RestAssured;
+import io.restassured.http.Headers;
+import io.restassured.http.Method;
+import io.restassured.response.Response;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+	public Response PostRequest(String url, String payload) {
+		RestAssured.baseURI = url;
+		Response response = RestAssured.given().
+				header("Accept","application/json").
+				header("Content-Type", "application/json").
+				request(Method.POST);
+
+		String responseBody = response.getBody().asString();
+		System.out.println("Response Body is =>  " + responseBody);
+		return response;
+	}
+}

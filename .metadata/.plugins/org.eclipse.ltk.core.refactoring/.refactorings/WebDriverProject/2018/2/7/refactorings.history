@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 4 elements to &apos;WebDriverProject/src/com.openqa.selenium&apos;&#x0A;- Original project: &apos;WebDriverProject&apos;&#x0A;- Destination element: &apos;WebDriverProject/src/com.openqa.selenium&apos;&#x0A;- Original elements:&#x0A;     FirefoxDriver.java&#x0A;     InternetExplorerDriver.java&#x0A;     WebDriver.java&#x0A;     ChromeDriver.java&#x0A;- Update references to refactored element" description="Move compilation units" destination="/src&lt;com.openqa.selenium" element1="/src&lt;{FirefoxDriver.java" element2="/src&lt;{InternetExplorerDriver.java" element3="/src&lt;{WebDriver.java" element4="/src&lt;{ChromeDriver.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1518479019191" units="4" version="1.0"/>
+</session>
